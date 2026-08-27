@@ -60,6 +60,8 @@ The generated catalog is deliberately not reduced to "instructions a compiler no
 
 A real host such as Steam Deck gets a CPUID/OSXSAVE feature mask applied **after** generation. The catalog remains the union. An instruction does not disappear from architecture knowledge because one CPU lacks its feature bit.
 
-## Idriç support
+## Codegen ownership and Idriç support
 
-Idriç support is a separate matrix. The initial backend can target a very small SysV x86-64 scalar subset without changing the complete instruction inventory.
+This branch is an architecture catalog/reference. Backend-facing XED/form inventory, the instruction encyclopedia, emitted/tested support, and executable x86-64 codegen live in `isomorphisms/idric-x86-aggressive-backend`.
+
+The canonical x86 backend may initially target a very small SysV x86-64 scalar subset without changing this complete LLVM-derived catalog. Neither catalog implies compiler support, and disagreement between them is review evidence rather than permission to silently pick one.
