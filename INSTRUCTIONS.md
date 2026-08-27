@@ -48,6 +48,6 @@ This branch therefore carries a superset useful for comparing SVE/SVE2 and later
 
 The raw Arm JSON is always retained. A normalizer bug therefore cannot make a partial list look complete.
 
-## Idriç support
+## Codegen ownership and Idriç support
 
-The initial Idriç backend can support only a tiny A64/SVE subset. That support matrix is separate. Unsupported architecture instructions remain in this complete inventory.
+This branch is inventory/research. Direct generic A64 codegen and its emitted/tested support matrix live in `isomorphisms/idric-x86-aggressive-backend:a64-backend`. That selector may begin with a tiny scalar A64 subset and later feature-mask NEON/SVE/SME work without changing this complete catalog. Unsupported architecture instructions remain known here.
