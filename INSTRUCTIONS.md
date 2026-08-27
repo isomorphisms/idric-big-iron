@@ -47,6 +47,6 @@ No instruction family is filtered out merely because Linux user code is unlikely
 - crypto, compression, transactional-execution and specialized assists;
 - privileged/control/I/O instructions present in the architecture.
 
-## Idriç support
+## Future codegen gate
 
-The first Idriç backend may remain a tiny Linux problem-state scalar subset. That support list is separate from the architecture inventory and may never be used to erase unsupported z instructions.
+This branch is inventory/research and claims no executable Idriç s390x backend. Open an emitted/tested support matrix only after an explicit reproducible assembler/linker/execution gate and a tiny exact Linux problem-state oracle. A future scalar subset remains separate from this catalog and may never erase unsupported z instructions.
