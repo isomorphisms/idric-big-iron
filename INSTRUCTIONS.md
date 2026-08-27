@@ -52,6 +52,6 @@ Assembler aliases are not allowed to create fictional extra encodings; each gene
 
 The raw canonical CSV is always retained beside normalized output so a parser bug cannot silently erase instructions while still claiming completeness.
 
-## Idriç support
+## Future codegen gate
 
-Idriç emission status is a separate support table. Complete architecture inventory does **not** mean the first backend implements VMX, VSX, MMA, privileged operations, or every legacy facility.
+This branch is inventory/research and claims no executable Idriç POWER backend. Open an emitted/tested support matrix only after an explicit reproducible assembler/linker/execution gate and a tiny exact source oracle. Complete architecture inventory does **not** mean a future backend implements VMX, VSX, MMA, privileged operations, or every legacy facility.
